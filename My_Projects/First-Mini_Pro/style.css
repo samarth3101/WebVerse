@@ -1,0 +1,316 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body-background color */
+body {
+    background-color: #e5e0e0;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+.navbar_logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar_links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar_links li {
+    margin-left: 20px;
+}
+
+.navbar_links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar_links a:hover {
+    color: #e18f42;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+
+/* about us section */
+.aboutus div p span {
+    color: #e18f42;
+    text-decoration: underline;
+}
+
+.aboutus {
+    text-align: center;
+    margin-top: 40px;
+    cursor: auto;
+}
+
+/* Toggle Button for Mobile View */
+.navbar_toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+/* Card Container Using Grid */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Two columns layout */
+    gap: 20px;
+    /* Space between cards */
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card h3 a {
+    text-decoration: none;
+    color: #e18f42;
+}
+
+.card h3 a:hover {
+    text-decoration: underline;
+    color: coral;
+}
+
+.card button {
+    width: 30%;
+    margin: 10%;
+    border-radius: 3px;
+}
+
+.card button:hover {
+    color: #e18f42;
+    background-color: #333;
+    transition: 0.5s;
+    border-radius: 6px;
+}
+
+
+.card:hover {
+    background-color: rgb(251, 227, 201);
+    box-shadow: 3px 3px 40px grey;
+    transform: translateY(-5px);
+}
+
+/* Container styles for centering */
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Link styles */
+.media a {
+    color: #333;
+    opacity: 0.5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: opacity 0.3s ease, padding 0.3s ease;
+}
+
+.media a:hover {
+    padding: 12px 22px;
+    opacity: 1;
+}
+
+
+/* Basic form container styling */
+.callback-form {
+    max-width: 400px;
+    /* Limits the form width */
+    margin: 50px auto;
+    /* Centers the form */
+    padding: 20px;
+    border: 1px solid #ddd;
+    /* Light border around the form */
+    border-radius: 10px;
+    /* Rounded corners */
+    background-color: #f9f9f9;
+    /* Subtle background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+}
+
+.callback-form:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.611);
+    transition: 0.8s;
+    padding: 25px 20px;
+}
+
+/* Form header */
+.callback-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    /* Space below the header */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px;
+    /* Space between fields */
+}
+
+/* Label styles */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    /* Space between label and input */
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input field styles */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* Light border */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 14px;
+}
+
+/* Input focus effect */
+.form-group input:focus {
+    border-color: #e18f42;
+    /* Highlight border on focus */
+    outline: none;
+    /* Removes default outline */
+}
+
+/* Submit button styles */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e18f42;
+    /* Button color */
+    color: white;
+    /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    /* Smooth color change */
+}
+
+/* Hover effect for submit button */
+.submit-btn:hover {
+    background-color: #d17d2b;
+    /* Darker shade on hover */
+}
+
+
+.end {
+    color: #555;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .media a {
+        margin: 10px 5px;
+        /* Reduced margin for tablets */
+        padding: 8px 16px;
+        /* Adjusted padding */
+        font-size: 14px;
+        /* Adjust font size for readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .media a {
+        margin: 5px;
+        /* Minimal margin for small screens */
+        padding: 6px 12px;
+        /* Further reduced padding */
+        font-size: 12px;
+        /* Smaller font size for mobile */
+        flex-wrap: wrap;
+        /* Allow wrapping in tight spaces */
+    }
+}
+
+/* Responsive Images */
+.card img {
+    width: 80%;
+    height: 80%;
+    max-height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Adjustments for Grid */
+@media (max-width: 768px) {
+    #cards {
+        grid-template-columns: 1fr;
+        /* Single column layout on smaller screens */
+    }
+}
+
+/* Responsive Styles for Navigation */
+@media (max-width: 768px) {
+    .navbar_links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .navbar_links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar_toggle {
+        display: block;
+    }
+
+    .navbar_links.active {
+        display: flex;
+    }
+}

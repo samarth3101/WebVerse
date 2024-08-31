@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Garage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <a href="#">My Garage<sup>&reg;</sup></a>
+        </div>
+        <ul class="navbar_links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navbar_toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- about us section -->
+    <div class="aboutus">
+        <div>
+            <p>Welcome to <a href="visitus.com"><span class="highlight">My Garage</span></a> your trusted destination
+                for premium car buying and automotive services. <br> With a commitment to excellence, we provide a wide
+                selection of new and pre-owned vehicles, expert consultation, and exceptional deals tailored to meet
+                your needs. <br> Our experienced team is dedicated to guiding you through every step of the car buying
+                process, ensuring a seamless and satisfying experience. <br> Beyond sales, we offer comprehensive
+                services, including financing, maintenance, and repairs, to keep your vehicle running smoothly. <br> At
+                My Garage, our goal is to build lasting relationships with our customers through transparency,
+                integrity, and unmatched service. Discover the difference with us today!</p>
+        </div>
+    </div> <br>
+    <hr>
+
+    <!-- info-cards -->
+    <div id="cards">
+        <div class="card">
+            <img src="inventory.webp" alt="inventory-img" />
+            <h3><br><a href="#"><span>INVENTORY</span></a></h3>
+            <p>
+                <br>Explore our diverse selection of vehicles. From sleek sedans to rugged SUVs, find the perfect car
+                that
+                suits your style and needs. Browse our comprehensive inventory to discover the latest models and used
+                cars available.
+            </p>
+            <button>Know more</button>
+        </div>
+        <div class="card">
+            <img src="deal.jpg" alt="deal-img" />
+            <h3><br><a href="#">DEAL</a></h3>
+            <p>
+                <br>Discover amazing offers and exclusive deals on a wide range of vehicles. Whether you’re seeking
+                discounts on new models, special financing rates, or trade-in bonuses, find something for everyone and
+                drive away with a great deal today!
+            </p>
+            <button>Get in touch</button>
+        </div>
+        <div class="card">
+            <img src="consult.webp" alt="consult-img" />
+            <h3><br><a href="#">CONSULTATION</a></h3>
+            <p>
+                <br>Get personalized guidance and expert advice tailored to your needs. Our consultants help you
+                navigate options, answer questions, and find the perfect vehicle for your lifestyle and budget. Schedule
+                a consultation today.
+            </p>
+            <button>Get callback</button>
+        </div>
+        <div class="card">
+            <img src="fin.jpg" alt="fin-img" />
+            <h3><br><a href="#"><span>Finance</span></a></h3>
+            <p>
+                <br>Hear from our satisfied customers! Read genuine reviews and testimonials to see why so many people
+                trust
+                us for their car buying journey. Our customers share their experiences, insights, and feedback to help
+                you make an informed decision. Check out the latest reviews and see what makes us stand out!
+            </p>
+            <button>Expand more</button>
+        </div>
+
+        <div class="card">
+            <img src="servicemain.png" alt="service-img" />
+            <h3><br><a href="#"><span>SERVICE &amp; MAINTAINANCE</span></a></h3>
+            <p>
+                <br>Hear from our satisfied customers! Read genuine reviews and testimonials to see why so many people
+                trust
+                us for their car buying journey. Our customers share their experiences, insights, and feedback to help
+                you make an informed decision. Check out the latest reviews and see what makes us stand out!
+            </p>
+            <button>bookings</button>
+        </div>
+
+        <div class="card">
+            <img src="rating.jpg" alt="rating" />
+            <h3><br><a href="#"><span>REVIEWS</span></a></h3>
+            <p>
+                <br>Hear from our satisfied customers! Read genuine reviews and testimonials to see why so many people
+                trust
+                us for their car buying journey. Our customers share their experiences, insights, and feedback to help
+                you make an informed decision. Check out the latest reviews and see what makes us stand out!
+            </p>
+            <button>reveiw us</button>
+        </div>
+    </div>
+
+    <!-- form -->
+    <div class="callback-form">
+        <form action="#" method="post">
+            <h2>Get a Callback</h2>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Request Callback</button>
+        </form>
+    </div>
+
+
+    <!-- social-icons -->
+    <div class="media">
+        <ul>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </ul>
+    </div>
+
+    <!-- ending -->
+    <div class="end">
+        Made in &hearts; by Samarth Patil. All rights are reserved &copy; 2023-2024.
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
