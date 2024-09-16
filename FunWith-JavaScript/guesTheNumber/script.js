@@ -13,7 +13,7 @@ while (true) {
         console.log("You are right!! random number was",random);
         break;
     } else if (guess < random){
-        guess = prompt("Your guess was small. Try again")
+        guess = prompt("Your guess was small. Try again");
     } else {
         guess = prompt("Number was large. Try again");
     }
