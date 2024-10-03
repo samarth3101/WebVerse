@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+}
+
+.btn {
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 5px solid black;
+  margin: 1.5rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.yellow {
+  background-color: rgb(208, 208, 42);
+}
+.red {
+  background-color: rgba(196, 23, 23, 0.805);
+}
+
+.blue {
+  background-color: rgba(28, 28, 187, 0.81);
+}
+
+.green {
+  background-color: rgba(11, 88, 11, 0.716);
+}
+
+.flash {
+  background-color: white;
+}
+
+.userflash {
+  background-color: rgb(110, 229, 110); /* Temporary flash color */
+  transition: background-color 0.25s ease-in-out; /* Smooth transition */
+}
