@@ -11,16 +11,110 @@ body {
     min-height: 100vh;
     background-color: black;
     overflow: hidden;
+    color: white;
+    flex-direction: column; /
 }
 
-/* Container for rotating cards */
+/* Centered Content Section */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+/* Navbar  */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar Links Container */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar-links a {
+    color: #d2cec0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Hover */
+.navbar-links a:hover {
+    color: #00ccff; /* Autobots/Decepticons blue */
+    text-shadow: 0 0 5px #00ccff, 0 0 10px #00ccff; /* Neon glow effect */
+    transform: scale(1.1); /* Slight scale up on hover */
+}
+
+/* Active Link*/
+.navbar-links a.active {
+    color: #ff3333; /* Decepticon red for active link */
+    text-shadow: 0 0 5px #ff3333, 0 0 10px #ff3333;
+    font-style: italic;
+}
+
+/* Toggle Switch */
+.toggle-container {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #0033CCBA;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.slider {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+#toggle-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotating Cards */
 .box {
+    margin-top: 9rem;
     position: relative;
     width: 200px;
     height: 200px;
     transform-style: preserve-3d;
     animation: animate 20s linear infinite;
-    z-index: 1; /* Keep cards above the canvas */
+    z-index: 1;
 }
 
 @keyframes animate {
@@ -53,4 +147,13 @@ body {
     object-fit: fill;
     border: 2px solid white;
     border-radius: 18px;
+}
+
+/* Main Content*/
+#content {
+    padding-top: 260px;
+    text-align: center;
+    color:rgb(122, 204, 204);
+    font-size: 18px;
+    font-weight: bold;
 }
