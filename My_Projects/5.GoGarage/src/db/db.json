@@ -1,0 +1,21 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john@example.com"
+        }
+    ],
+    "services": [
+        {
+            "id": 1,
+            "name": "Oil Change",
+            "price": 500
+        },
+        {
+            "id": 2,
+            "name": "Tire Rotation",
+            "price": 300
+        }
+    ]
+}

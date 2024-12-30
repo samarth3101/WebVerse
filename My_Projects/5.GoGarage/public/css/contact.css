@@ -1,0 +1,109 @@
+*{
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* General Styles */
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #fbb034, #292939);
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Heading */
+.contact-form-section h2 {
+    font-size: 28px;
+    color: #292939;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+.contact-form-section p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #292939;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #292939;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #fbb034;
+    box-shadow: 0 0 10px rgba(251, 176, 52, 0.7);
+}
+
+/* Submit Button */
+.contact-form button {
+    background-color: #fbb034;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #e89c00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form-section {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .contact-form button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
