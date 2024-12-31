@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowing HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Text Elements in HTML -->
+    <!-- Headings (<h1> to <h6>) -->
+    <h1> this is heading h1</h1>
+    <h2> this is heading h2</h2>
+    <h3> this is heading h3</h3>
+    <h4> this is heading h4</h4>
+    <h5> this is heading h5</h5>
+    <h6> this is heading h6</h6>  <hr>
+
+    <!-- Paragraphs (<p>) -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi assumenda voluptatum cumque velit eos ad, quisquam tempora maxime rerum sequi exercitationem ab nobis dolor eligendi nihil consequuntur vel fuga, incidunt aspernatur perferendis labore adipisci? Dicta voluptatibus debitis libero ratione excepturi iste sint, itaque ea neque!</p>  <hr>
+
+    <!-- Lists -->
+    <!-- Ordered List (<ol>) -->
+    <ol>
+        <li>Nexon</li>
+        <li>Safari</li>
+        <li>Harrier</li>
+    </ol>
+
+    <hr>
+
+    <!-- Unordered List (<ul>) -->
+    <ul>
+        <li>Indica</li>
+        <li>Indigo</li>
+        <li>Nano</li>
+    </ul>
+
+    <hr>
+
+    <!-- Definition List (<dl>) -->
+    <dl>
+        <dt>Nexon</dt>
+        <dd>1400cc Turbo Petrol</dd>
+        <dt>Safari</dt>
+        <dd>2800cc Turbo Diesel</dd>
+        <dt>Harrier</dt>
+        <dd>3200cc NASP Petrol</dd>
+    </dl>
+
+    <hr>
+
+    <!-- Special Formatting -->
+    <b>This is bold text</b> <br>
+    <strong>This is important text</strong>
+
+    <hr>
+
+    <!-- Italic (<i> or <em>) -->
+    <i>This is italic text</i> <br>
+    <em>This is emphasized text</em>
+
+    <hr>
+
+    <!-- Block Elements -->
+    <div>This is a block element.</div>
+    <p>This is a paragraph (block element).</p>
+    <h1>This is a heading (block element).</h1>
+
+    <hr>
+
+    <!-- Inline Elements -->
+    <p>This is a <span>span (inline element)</span> inside a paragraph.</p>
+    <a href="#">This is an inline link element.</a>
+
+    <hr>
+
+    <!-- Div and Span Elements -->
+    <div>
+        <h1>Heading inside a div</h1>
+        <p>This is a paragraph inside a div.</p>
+    </div>
+
+    <p>This is a <span style="color: red;">red word</span> in a paragraph.</p>
+
+    <hr>
+
+    <!-- Subscript and Superscript -->
+    <p>The chemical formula for water is H<sub>2</sub>O.</p>
+
+    <p>The value of pi is approximately 3.14<sup>15</sup>.</p>
+
+    <hr>
+
+    <!-- Semantic Markup -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+    <article>
+        <h2>Article Title</h2>
+        <p>This is the content of the article.</p>
+    </article>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>This is the introduction to the topic.</p>
+    </section>
+
+    <aside>
+        <h3>Related Articles</h3>
+        <ul>
+            <li><a href="#">Article 1</a></li>
+            <li><a href="#">Article 2</a></li>
+        </ul>
+    </aside>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- Tables -->
+    <table style="border: 2px solid black;">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Colspan and Rowspan -->
+    <td colspan="2">Spanning across two columns</td>
+
+    <td rowspan="2">Spanning across two rows</td>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>$1.00</td>
+                <td rowspan="2">10</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>$0.50</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Forms -->
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <!-- buttons -->
+    <button type="button">Click Me</button> <!-- Regular button -->
+    <button type="submit">Submit</button> <!-- Submit button for forms -->
+    <button type="reset">Reset</button> <!-- Resets the form -->
+</body>
+</html>
