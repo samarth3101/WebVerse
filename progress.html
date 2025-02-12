@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepStack - Progress</title>
+    <link rel="stylesheet" href="progress.css">
+    <script defer src="progress.js"></script>
+</head>
+<body>
+    <!-- <nav class="navbar">
+        <div class="logo"><a href="index.html">DeepStack</a></div>
+        <ul class="nav-links">
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="queries.html">Queries</a></li>
+            <li><a href="https://github.com/samarth3101" target="_blank">GitHub</a></li>
+        </ul>
+    </nav> -->
+
+    <section class="progress">
+        <div class="progress-header">
+            <h1>🗓️ Learning Progress</h1>
+            <p>Track my progress as I go deeper into AI/ML.</p>
+        </div>
+
+        <div class="calendar">
+            <div class="day" onclick="openDay(1)">Day 1</div>
+            <div class="day" onclick="openDay(2)">Day 2</div>
+            <div class="day" onclick="openDay(3)">Day 3</div>
+            <div class="day" onclick="openDay(4)">Day 4</div>
+            <div class="day" onclick="openDay(5)">Day 5</div>
+            <div class="day" onclick="openDay(6)">Day 6</div>
+            <div class="day" onclick="openDay(7)">Day 7</div>
+        </div>
+    </section>
+
+    <!-- Day Details Popup -->
+    <div class="day-popup" id="dayPopup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">❌</span>
+            <h2 id="dayTitle">Day X</h2>
+            <p id="dayDescription">Loading...</p>
+            <a id="downloadLink" href="#" download class="download-btn">📥 Download Notes</a>
+        </div>
+    </div>
+</body>
+</html>
